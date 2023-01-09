@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { ChallengesContext } from '../context/ChallengeContext'
+import { useChallenges } from "../hooks/useChallenges";
 
-import styles from '../styles/components/Profile.module.css'
+import styles from "../styles/components/Profile.module.css";
 
 export function Profile() {
-  const { level } = useContext(ChallengesContext)
+  const { level } = useChallenges();
 
   return (
     <div className={styles.profileContainer}>
@@ -17,5 +16,5 @@ export function Profile() {
         </p>
       </div>
     </div>
-  )
+  );
 }

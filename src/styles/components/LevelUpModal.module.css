@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.container {
+.content {
   background: var(--white);
   width: 100%;
   max-width: 400px;
@@ -22,11 +22,13 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
   text-align: center;
+  
   position: relative;
 }
 
-.container header {
+.content header {
   font-size: 8.75rem;
   font-weight: 600;
   color: var(--blue);
@@ -34,18 +36,18 @@
   background-size: contain;
 }
 
-.container strong {
+.content strong {
   font-size: 2.25rem;
   color: var(--title);
 }
 
-.container p {
+.content p {
   font-size: 1.25rem;
   color: var(--text);
   margin-top: 0.25rem;
 }
 
-.container button {
+.content button {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
